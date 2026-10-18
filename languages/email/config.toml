@@ -1,0 +1,15 @@
+name = "Email"
+grammar = "email"
+path_suffixes = ["eml", "email", "mbox", "mbx"]
+line_comments = []
+autoclose_before = ")]}\"'"
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "<", end = ">", close = true, newline = false },
+  { start = "\"", end = "\"", close = true, newline = false },
+]
+# Best-effort autodetection for files opened without a recognized
+# extension (e.g. a raw message saved as .txt) -- matches the very first
+# line being either an mbox envelope or one of the near-universal leading
+# headers real mail servers/clients add first.
+first_line_pattern = "^(From |Return-Path:|Received:|Delivered-To:|X-Received:|Message-ID:|MIME-Version:)"
