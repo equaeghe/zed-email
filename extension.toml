@@ -9,4 +9,4 @@ repository = "https://github.com/equaeghe/zed-email"
 [grammars.email]
 # Zed fetches the grammar source at this exact commit and compiles it itself
 repository = "https://github.com/equaeghe/tree-sitter-email"
-commit = "17e271e060fb51ce2f75bfba28a3ca9810dbc46e"
+commit = "fae7538d66ebc19977b382b20ed863b7f84b051d"
